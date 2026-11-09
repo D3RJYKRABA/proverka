@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Projects — BSc Data Science for Responsible Business</title>
+<meta name="description" content="Applied data science projects completed by students in the BSc Data Science for Responsible Business, a joint program by emlyon business school and Centrale Lyon.">
+<meta name="theme-color" content="#E4032B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <div class="brand-lockup">
+      <img src="assets/logo-emlyon-placeholder.png" alt="emlyon business school">
+      <span class="sep">×</span>
+      <img src="assets/logo-centrale-placeholder.png" alt="Centrale Lyon">
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html" aria-current="page">Student Projects</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <p class="eyebrow">Selected work</p>
+    <h1 style="margin-bottom:1rem;">Student projects</h1>
+    <p class="projects-lede">Applied data science projects completed by students during their studies in the
+      program, in partnership with host organizations.</p>
+
+    <div class="proj-grid">
+
+      <article class="proj-card">
+        <span class="ph-tag">EY Open Science AI &amp; Data Challenge 2026</span>
+        <h3>ML Model applying satellite data, climate data to analysis and sustainable environmental monitoring.</h3>
+        <p class="ph-desc">This project predicts three water quality parameters — total alkalinity, electrical
+          conductivity, and dissolved reactive phosphorus — by combining field measurements, Landsat satellite
+          imagery (spectral bands and indices such as NDWI, MNDWI, NDVI), and TerraClimate environmental data.
+          The team tested several gradient boosting models (XGBoost, LightGBM, CatBoost) and built a final
+          ensemble pipeline — blending and stacking tailored to each parameter's behavior, with a specialized
+          classifier for the hardest-to-predict phosphorus values — achieving a calibrated score of 0.3599 on
+          the challenge.</p>
+        <a class="proj-link" href="#" target="_blank" rel="noopener">View project →</a>
+      </article>
+
+      <article class="proj-card">
+        <span class="ph-tag">Hi!ckathon 2025 - AI &amp; Data Science challenge by Hi! PARIS</span>
+        <h3>ML pipeline to predict academic performance from large-scale educational data.</h3>
+        <p class="ph-desc">This project designs a machine learning pipeline to predict the math level of
+          15-year-old students from large-scale educational data. The team trained and tuned three gradient
+          boosting models (XGBoost, LightGBM, CatBoost) with Optuna, then combined them through Ridge stacking
+          for a more stable final prediction, achieving the 3rd best score among all submissions in the
+          challenge.</p>
+        <a class="proj-link" href="https://github.com/gabentho/Hi-ckathon-5---AI-Sustainability" target="_blank" rel="noopener">View project →</a>
+      </article>
+
+      <article class="proj-card">
+        <span class="ph-tag">Course Project - Machine Learning</span>
+        <h3>Predicting Resale Prices for Second-Hand Luxury Fashion</h3>
+        <p class="ph-desc">This project predicts the selling price of second-hand fashion items based on their
+          attributes, using a Kaggle dataset built by web-scraping Vestiaire Collective, a luxury resale
+          platform, and training only on items that were actually sold. Since the model relies on tree-based
+          algorithms, attributes like category and material had to be separated into distinct features (e.g.
+          "coat" and "wool" rather than one combined value) to help the models distinguish between items.
+          Random Forest, XGBoost, and CatBoost were tested, with XGBoost delivering the best performance
+          without overfitting.</p>
+        <a class="proj-link" href="#" target="_blank" rel="noopener">View project →</a>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap foot-inner">
+    <span>emlyon business school × Centrale Lyon</span>
+    <span>Technical portfolio</span>
+  </div>
+</footer>
+
+</body>
+</html>
